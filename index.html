@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron & Oak Build Co. | Ultra-Premium</title>
+  <meta name="description" content="AURA engineers whisper-quiet, hospital-grade climate architecture, geothermal heat pumps, and flush linear air diffusers for bespoke modern residences.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <style id="niche-override">
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+    
+    :root {
+      --font-display: 'Space Grotesk', sans-serif !important;
+      --font-body: 'Space Grotesk', sans-serif !important;
+      --bg-page: #e5e5e5 !important;
+      --bg-surface: #ffffff !important;
+      --text-primary: #000000 !important;
+      --radius-outer: 0 !important;
+      --radius-inner: 0 !important;
+    }
+    .bento-card, .bento-core, .gallery-item { 
+      border-radius: 0 !important; 
+      border: 3px solid #000 !important; 
+      box-shadow: 8px 8px 0px #000 !important; 
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .bento-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px #000 !important; }
+    .primary-btn { border-radius: 0 !important; border: 2px solid #000 !important; box-shadow: 4px 4px 0px #000; font-weight: bold; }
+    .eyebrow-accent { background: #000; color: #fff; padding: 4px 8px; display: inline-block; }
+  
+  </style>
+</head>
+<body>
+
+  <!-- Floating Island Navigation -->
+  <header class="nav-wrapper">
+    <nav class="glass-nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-glyph">✦</span>
+        <span class="brand-text">IRON & OAK</span>
+        <span class="brand-badge">BUILD CO.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#systems" class="nav-link">Portfolio</a>
+        <a href="#simulator" class="nav-link">Design-Build</a>
+        <a href="#filtration" class="nav-link">Custom Homes</a>
+        <a href="#specifications" class="nav-link">Our Process</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#simulator" class="btn-pill-sm">
+          <span>Calculate Load</span>
+          <span class="icon-circle">↗</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-inner">
+      <a href="#systems" class="drawer-link">Portfolio</a>
+      <a href="#simulator" class="drawer-link">Design-Build</a>
+      <a href="#filtration" class="drawer-link">Custom Homes</a>
+      <a href="#specifications" class="drawer-link">Our Process</a>
+      <a href="#contact" class="btn-pill">
+        <span>Request Engineering Consultation</span>
+        <span class="icon-circle">→</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-eyebrow-wrapper">
+          <div class="eyebrow-pill">
+            <span class="pulse-dot"></span>
+            <span>NEXT-GEN GEOTHERMAL & INVISIBLE DIFFUSION</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">Iron & Oak Build Co.</h1>
+
+        <p class="hero-subtext">
+          Precision thermodynamics engineered for architectural residences. Hospital-grade MERV 16 filtration, sub-18dB whisper acoustics, and seamless ceiling integration.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#simulator" class="btn-pill">
+            <span>Launch Thermal Simulator</span>
+            <span class="icon-circle">⚡</span>
+          </a>
+          <a href="#systems" class="btn-pill-ghost">
+            <span>Explore Systems</span>
+            <span class="icon-circle">↓</span>
+          </a>
+        </div>
+
+        <!-- Telemetry Stats Bar -->
+        <div class="telemetry-bar double-bezel">
+          <div class="telemetry-core">
+            <div class="telemetry-item">
+              <span class="telemetry-val">17.8 <span class="unit">dBA</span></span>
+              <span class="telemetry-lbl">Audible Sound Floor</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">32.5 <span class="unit">SEER2</span></span>
+              <span class="telemetry-lbl">Peak Efficiency Ratio</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">99.97<span class="unit">%</span></span>
+              <span class="telemetry-lbl">Aerosol Filtration (0.1µm)</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">24/7</span>
+              <span class="telemetry-lbl">Precision Cloud Diagnostics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Visual Container with Real Bespoke Image -->
+        <div class="hero-media-wrapper double-bezel">
+          <div class="hero-media-core">
+            <img src="assets/hero.jpg" alt="AURA Flush Linear Slot Ceiling Diffusers in Architectural Living Space" class="hero-img" loading="eager">
+            <div class="media-overlay">
+              <div class="media-tag">
+                <span class="tag-pin"></span>
+                <span>PROJECT 044 // ASPEN MEADOWS RESIDENCE — AURA SYSTEM ZERO</span>
+              </div>
+              <div class="media-readout">
+                <span class="readout-code">ZONE 01: 71.4°F</span>
+                <span class="readout-status">FLOW: 120 CFM (SILENT)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Systems Bento Grid Section -->
+    <section id="systems" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-label">SYSTEM ARCHITECTURES</span>
+          <h2 class="section-title">Built for spaces where mechanical equipment must never be seen or heard.</h2>
+          <p class="section-desc">Conventional HVAC trades architectural beauty for bulky metal grilles. AURA embeds aerodynamic flow channels directly into standard drywall and wood millwork.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento 1: Large Feature Card -->
+          <div class="bento-card bento-wide double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">FLAGSHIP ARCHITECTURE</div>
+              <h3 class="card-title">AURA Linear™ Slot Diffusers</h3>
+              <p class="card-text">
+                Only 12mm wide opening. Sits perfectly flush with acoustic wood slats, venetian plaster, or reveal baseboards. Engineered with Coanda-effect laminar aerodynamics so cool air blankets the ceiling without drafts.
+              </p>
+              <div class="feature-tags">
+                <span class="f-tag">12mm Architectural Reveal</span>
+                <span class="f-tag">Zero Fasteners Visible</span>
+                <span class="f-tag">Black Oxide / Custom Powdercoat</span>
+              </div>
+              <div class="card-metric-box">
+                <div class="metric">
+                  <span class="m-val">0.02 in. wg</span>
+                  <span class="m-lbl">Ultra-Low Static Pressure</span>
+                </div>
+                <div class="metric">
+                  <span class="m-val">&lt; NC-15</span>
+                  <span class="m-lbl">Noise Criterion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2: Geothermal -->
+          <div class="bento-card double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">GEOTHERMAL HEAT PUMP</div>
+              <h3 class="card-title">VORTEX Ground-Source Core</h3>
+              <p class="card-text">
+                Harnesses stable underground 55°F bedrock temperatures. Variable-speed inverter compressor adjusts output in 1% micro-increments.
+              </p>
+              <div class="card-footer-metric">
+                <span class="big-metric">420%</span>
+                <span class="metric-caption">Thermodynamic Coefficient of Performance (COP 4.2)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3: CleanAir -->
+          <div class="bento-card double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">PATHOGEN PURIFICATION</div>
+              <h3 class="card-title">CleanAir™ Active Bi-Polar</h3>
+              <p class="card-text">
+                Generates millions of natural oxygen ions per cubic meter to neutralize PM2.5 wildfire smoke, mold spores, and airborne allergens in seconds.
+              </p>
+              <div class="card-footer-metric">
+                <span class="big-metric">0.00 ppm</span>
+                <span class="metric-caption">Zero Ozone Generation (UL 2998 Verified)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 4: Smart Cloud -->
+          <div class="bento-card bento-wide double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">INTELLIGENCE SUITE</div>
+              <h3 class="card-title">Micro-Zone Dynamic Flow Balancer</h3>
+              <p class="card-text">
+                Every bedroom, wine cellar, and art gallery receives dedicated pneumatic dampers with sub-half-degree precision, controlled via BACnet, Control4, Crestron, or Home Assistant.
+              </p>
+              <div class="feature-tags">
+                <span class="f-tag">Direct Crestron & Savant API</span>
+                <span class="f-tag">Sub-minute Thermal Calibration</span>
+                <span class="f-tag">Predictive Weather Inversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Consultation Modal -->
+    <div class="modal-overlay" id="quoteModal" aria-hidden="true">
+      <div class="modal-shell double-bezel">
+        <div class="modal-core">
+          <div class="modal-header">
+            <h3>Request Engineering Review</h3>
+            <button class="modal-close" id="closeModalBtn">&times;</button>
+          </div>
+          <p class="modal-sub">Submit your project blueprints or load parameters for an architect-ready mechanical schedule.</p>
+          <form id="consultationForm" class="aura-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="clientName">Full Name</label>
+                <input type="text" id="clientName" required placeholder="Alexander Vance">
+              </div>
+              <div class="form-field">
+                <label for="clientEmail">Email Address</label>
+                <input type="email" id="clientEmail" required placeholder="alexander@architect.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="projectLocation">Project City / Climate Zone</label>
+                <input type="text" id="projectLocation" required placeholder="Aspen, CO (Zone 6)">
+              </div>
+              <div class="form-field">
+                <label for="projectType">Property Type</label>
+                <select id="projectType">
+                  <option>New Architectural Build</option>
+                  <option>Historic Luxury Retrofit</option>
+                  <option>High-Rise Penthouse</option>
+                  <option>Commercial Gallery / Studio</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn-pill full-width">
+              <span>Submit for Engineering Feasibility</span>
+              <span class="icon-circle">✓</span>
+            </button>
+            <p class="form-notice" id="formSuccessNotice" style="display:none;">
+              ✓ Request received. An AURA Senior Mechanical Principal will contact you within 4 business hours.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow-label">OUR APPROACH</span>
+          <h2 class="section-title">How We Deliver Perfection.</h2>
+          <p class="section-desc">A methodical, refined process designed for the most discerning clientele.</p>
+        </div>
+        <div class="process-grid">
+          
+            <div class="process-step">
+              <span class="step-number">01</span>
+              <h3 class="step-title">Architectural Audit</h3>
+              <p class="step-desc">We conduct a comprehensive thermal load analysis of your property, taking into account sun paths, fenestration, and architectural volumes.</p>
+            </div>
+          
+            <div class="process-step">
+              <span class="step-number">02</span>
+              <h3 class="step-title">Custom Engineering</h3>
+              <p class="step-desc">Our mechanical engineers design a bespoke micro-diffused network that integrates invisibly with your ceiling materials and millwork.</p>
+            </div>
+          
+            <div class="process-step">
+              <span class="step-number">03</span>
+              <h3 class="step-title">Precision Execution</h3>
+              <p class="step-desc">Master technicians install the geothermal core and linear slot diffusers with millimeter precision, tuning the system for whisper-quiet operation.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-label">CLIENT EXPERIENCES</span>
+          <h2 class="section-title">Words from our Patrons.</h2>
+        </div>
+        <div class="testimonial-grid">
+          
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p class="testimonial-text">AURA transformed our Malibu property. The climate is perfectly balanced, and the hardware is completely invisible. An architectural triumph.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">E</div>
+                <div class="author-info">
+                  <h4>E. Sterling</h4>
+                  <span>Architectural Designer</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p class="testimonial-text">Finally, an HVAC system that doesn't ruin the ceiling plane. The clean air filtration is immediately noticeable, and the silence is golden.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">M</div>
+                <div class="author-info">
+                  <h4>M. Vance</h4>
+                  <span>Private Estate Owner</span>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow-label">KNOWLEDGE BASE</span>
+          <h2 class="section-title">Frequently Asked Questions.</h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item">
+              <h4 class="faq-q">What is your initial consultation process?</h4>
+              <p class="faq-a">We begin with a comprehensive discovery phase to understand your exact requirements and establish a tailored strategy before any commitment.</p>
+            </div>
+            <div class="faq-item">
+              <h4 class="faq-q">Who will be managing my account?</h4>
+              <p class="faq-a">You will be assigned a dedicated senior partner who serves as your primary point of contact throughout our engagement.</p>
+            </div>
+            <div class="faq-item">
+              <h4 class="faq-q">Do you take on clients outside of your immediate region?</h4>
+              <p class="faq-a">Yes. We work with elite clientele globally and maintain a robust digital infrastructure to support seamless remote collaboration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">IRON & OAK BUILD CO.</h2>
+          <p class="cta-desc">Contact us today to schedule your private consultation.</p>
+          <a href="#contact" class="btn-pill">
+            <span>Contact Iron & Oak Build Co.</span>
+            <span class="icon-circle">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-glyph">✦</span>
+        <span class="brand-name">IRON & OAK BUILD CO.</span>
+        <p class="brand-strap">Generational craftsmanship and luxury residential remodeling.</p>
+      </div>
+      <div class="footer-meta">
+        <span class="server-badge">RUNNING ON LOCALHOST:5001</span>
+        <span class="copyright">© 2026 Iron & Oak Build Co.. All engineering patents registered.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
