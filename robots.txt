@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://08-remodeling-ironoak.netlify.app/sitemap.xml
