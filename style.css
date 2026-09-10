@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Inter:wght@400;500;600&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Oswald:wght@400;500;700&family=Outfit:wght@400;600&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600&family=Space+Grotesk:wght@400;600&family=Syne:wght@400;600;700&display=swap');
 
 :root {
-  --bg-dark: #2E1065;
-  --bg-light: #F5F3FF;
-  --primary: #7C3AED;
-  --text-dark: #1C1917;
+  --bg-dark: #172554;
+  --bg-light: #EFF6FF;
+  --primary: #2563EB;
+  --text-dark: #1E3A8A;
   --text-light: #FFFFFF;
-  --accent: #A78BFA;
-  --font-display: 'DM Serif Display', serif;
-  --font-body: 'DM Sans', sans-serif;
-  --border-radius: 2px;
-  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --accent: #60A5FA;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --border-radius: 10px;
+  --box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
